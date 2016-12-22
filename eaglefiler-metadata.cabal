@@ -1,0 +1,29 @@
+name:                eaglefiler-metadata
+version:             0.1.0.0
+synopsis:            Models and extraction of metadata from EagleFiler
+description:         See README.md
+homepage:            https://github.com/spl/eaglefiler-metadata-haskell
+license:             PublicDomain
+license-file:        LICENSE
+author:              Sean Leather
+maintainer:          sean.leather@gmail.com
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     EagleFiler.Metadata
+  build-depends:
+    base,
+    bytestring,
+    cassava,
+    text,
+    time,
+    vector
+  default-language:    Haskell2010
+  ghc-options:         -funbox-strict-fields -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/spl/eaglefiler-metadata-haskell
